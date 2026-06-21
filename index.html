@@ -1,319 +1,631 @@
-<!DOCTYPE html>
+ <!DOCTYPE html>
 <html lang="en">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta name="description" content="Network Engineer, Web Developer & IT Specialist - Kampala, Uganda. FTTH Infrastructure, Full-Stack Development, IT Support">
-    <title>KATO EMMANUEL NGANDA | Network Engineer | Web Developer | IT Specialist</title>
-    <link rel="stylesheet" href="styles.css">
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600;700&family=Roboto+Mono:wght@400;600&display=swap" rel="stylesheet">
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Kato Emmanuel Nganda | Network Engineer · Web Developer · IT Specialist</title>
+<meta name="description" content="Network Engineer, Web Developer & IT Specialist based in Kampala, Uganda. FTTH Infrastructure, Full-Stack Development, Cisco & Huawei Certified.">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="stylesheet" href="style.css">
+<link href="https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@300;400;500;600;700&family=DM+Mono:wght@300;400;500&display=swap" rel="stylesheet">
 </head>
 <body>
-    <!-- Navigation Header -->
-    <header class="header">
-        <div class="container">
-            <div class="nav-wrapper">
-                <div class="logo">
-                    <span class="logo-name">KATO EMMANUEL</span>
-                    <span class="logo-title">IT PERSONEL</span>
-                </div>
-                <nav class="nav-menu">
-                    <a href="#hero" class="nav-link">Home</a>
-                    <a href="#about" class="nav-link">About</a>
-                    <a href="#experience" class="nav-link">Experience</a>
-                    <a href="#skills" class="nav-link">Skills</a>
-                    <a href="#contact" class="nav-link">Contact</a>
-                </nav>
-            </div>
+
+<!-- NAV -->
+<nav>
+  <div class="nav-logo">KEN<span>.</span>Technologies</div>
+  <ul class="nav-links">
+    <li><a href="#about">About</a></li>
+    <li><a href="#experience">Experience</a></li>
+    <li><a href="#skills">Skills</a></li>
+    <li><a href="#projects">Projects</a></li>
+    <li><a href="#contact">Contact</a></li>
+  </ul>
+  <a href="#contact" class="nav-cta">Hire Me</a>
+  <button class="hamburger" id="hamburger" aria-label="Menu">
+    <span></span><span></span><span></span>
+  </button>
+</nav>
+
+<div class="mobile-menu" id="mobileMenu">
+  <a href="#about" onclick="closeMobileMenu()">About</a>
+  <a href="#experience" onclick="closeMobileMenu()">Experience</a>
+  <a href="#skills" onclick="closeMobileMenu()">Skills</a>
+  <a href="#projects" onclick="closeMobileMenu()">Projects</a>
+  <a href="#contact" onclick="closeMobileMenu()">Contact</a>
+</div>
+
+<!-- HERO -->
+<section id="hero">
+  <div class="hero-grid"></div>
+  <div class="hero-glow"></div>
+  <div class="hero-glow2"></div>
+  <div class="hero-inner">
+    <div class="hero-content">
+      <div class="hero-tag">Available for new opportunities</div>
+      <h1 class="hero-name">Kato<br><em>Emmanuel</em><br>Nganda</h1>
+      <p class="hero-title">
+        <span>Network Engineer</span>
+        <span class="sep"></span>
+        <span>Web Developer</span>
+        <span class="sep"></span>
+        <span>IT Specialist</span>
+      </p>
+      <p class="hero-desc">
+        Building robust networks and elegant digital experiences from Kampala, Uganda.
+        Cisco certified. Huawei HCIA. 3+ years engineering infrastructure and full-stack applications.
+      </p>
+      <div class="hero-actions">
+        <a href="#contact" class="btn-primary">
+          <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M4 4h16c1.1 0 2 .9 2 2v12c0 1.1-.9 2-2 2H4c-1.1 0-2-.9-2-2V6c0-1.1.9-2 2-2z"/><polyline points="22,6 12,13 2,6"/></svg>
+          Get In Touch
+        </a>
+        <a href="#projects" class="btn-secondary">
+          <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><polygon points="12 2 2 7 12 22 22 7 12 2"/></svg>
+          View Projects
+        </a>
+      </div>
+      <div class="hero-stats">
+        <div class="stat-card">
+          <div class="stat-num">550+</div>
+          <div class="stat-label">Issues Resolved</div>
         </div>
-    </header>
-
-    <!-- Hero Section -->
-    <section id="hero" class="hero">
-        <div class="container">
-            <div class="hero-content">
-                <h1 class="hero-title">Network Engineer | Web Developer | IT Solutions Architect</h1>
-                <p class="hero-subtitle">Specialized in FTTH Infrastructure, Full-Stack Web Development, Network Security & Enterprise Systems</p>
-                <div class="hero-meta">
-                    <span class="meta-item">📍 Kampala, Uganda</span>
-                    <span class="meta-item">🔗 Cisco Certified | Huawei HCIA</span>
-                    <span class="meta-item">⚡ 3+ Years Professional Experience</span>
-                </div>
-                <div class="hero-cta">
-                    <a href="#contact" class="btn btn-primary">Get In Touch</a>
-                    <a href="#experience" class="btn btn-secondary">View Work</a>
-                </div>
-            </div>
+        <div class="stat-card">
+          <div class="stat-num">20+</div>
+          <div class="stat-label">Web Projects</div>
         </div>
-    </section>
-
-    <!-- About Section -->
-    <section id="about" class="section about">
-        <div class="container">
-            <h2 class="section-title">About Me</h2>
-            <div class="about-grid">
-                <div class="about-content">
-                    <p class="about-text">
-                        I'm a versatile IT professional with comprehensive expertise spanning network engineering, full-stack web development, and enterprise IT solutions. My career has been defined by a commitment to operational excellence, innovative problem-solving, and delivering scalable technical solutions across multiple domains.
-                    </p>
-                    <p class="about-text">
-                        With hands-on experience managing FTTH networks, developing responsive web applications, and implementing IT infrastructure solutions, I've successfully diagnosed complex technical issues while optimizing systems for performance and security. My technical foundation spans network architecture, modern web development frameworks, system administration, security protocols, and emerging technologies like IoT and cloud computing.
-                    </p>
-                    <div class="about-highlights">
-                        <div class="highlight">
-                            <span class="highlight-number">150+</span>
-                            <span class="highlight-label">Technical Issues Resolved</span>
-                        </div>
-                        <div class="highlight">
-                            <span class="highlight-number">20+</span>
-                            <span class="highlight-label">Web Projects Delivered</span>
-                        </div>
-                        <div class="highlight">
-                            <span class="highlight-number">99.8%</span>
-                            <span class="highlight-label">System Uptime</span>
-                        </div>
-                    </div>
-                </div>
-                <div class="about-education">
-                    <h3>Education</h3>
-                    <div class="education-item">
-                        <div class="education-header">
-                            <span class="education-degree">B.Sc. Information Technology</span>
-                            <span class="education-year">2022 - 2024</span>
-                        </div>
-                        <p class="education-school">Ndejje University, Kampala</p>
-                    </div>
-                    <div class="education-item">
-                        <div class="education-header">
-                            <span class="education-degree">Diploma in Information Technology</span>
-                            <span class="education-year">2021 - 2022</span>
-                        </div>
-                        <p class="education-school">Ndejje University, Kampala</p>
-                    </div>
-                </div>
-            </div>
+        <div class="stat-card">
+          <div class="stat-num">99.8%</div>
+          <div class="stat-label">System Uptime</div>
         </div>
-    </section>
-
-    <!-- Experience Section -->
-    <section id="experience" class="section experience">
-        <div class="container">
-            <h2 class="section-title">Professional Experience</h2>
-            <div class="timeline">
-                <div class="timeline-item">
-                    <div class="timeline-marker"></div>
-                    <div class="timeline-content">
-                        <div class="experience-header">
-                            <h3 class="experience-role">Network Support Engineer Tier II</h3>
-                            <span class="experience-date">Feb 2025 - Present</span>
-                        </div>
-                        <p class="experience-company">Savanna Fibre · Owen Road, Kampala</p>
-                        <ul class="experience-duties">
-                            <li>Monitor and maintain FTTH network performance ensuring 99.8% service availability</li>
-                            <li>Diagnose and resolve complex network faults, outages, and service degradation issues</li>
-                            <li>Configure and manage routers, switches, and wireless equipment across enterprise infrastructure</li>
-                            <li>Handle incident response and escalation management to minimize customer downtime</li>
-                            <li>Document network performance metrics and generate technical reports for stakeholder review</li>
-                        </ul>
-                    </div>
-                </div>
-
-                <div class="timeline-item">
-                    <div class="timeline-marker"></div>
-                    <div class="timeline-content">
-                        <div class="experience-header">
-                            <h3 class="experience-role">IT Specialist (Internship)</h3>
-                            <span class="experience-date">Jan 2023 - Aug 2024</span>
-                        </div>
-                        <p class="experience-company">Compax Solutions · Wandegeya, Kampala</p>
-                        <ul class="experience-duties">
-                            <li>Maintained and troubleshot IT hardware, software, and network systems for 50+ endpoints</li>
-                            <li>Deployed and configured operating systems ensuring GDPR compliance and security standards</li>
-                            <li>Implemented ERP system solutions and provided technical support for system upgrades</li>
-                            <li>Established network infrastructure for multiple client locations with redundancy</li>
-                        </ul>
-                    </div>
-                </div>
-
-                <div class="timeline-item">
-                    <div class="timeline-marker"></div>
-                    <div class="timeline-content">
-                        <div class="experience-header">
-                            <h3 class="experience-role">Customer Care Representative</h3>
-                            <span class="experience-date">Feb 2025 - Oct 2025</span>
-                        </div>
-                        <p class="experience-company">Airtel Uganda · Wandegeya, Kampala</p>
-                        <ul class="experience-duties">
-                            <li>Resolved 200+ customer support tickets with 95% first-contact resolution rate</li>
-                            <li>Provided technical troubleshooting for network and billing issues across all platforms</li>
-                            <li>Maintained detailed customer interaction records and escalation protocols</li>
-                        </ul>
-                    </div>
-                </div>
-            </div>
+      </div>
+    </div>
+    <div class="hero-card">
+      <div class="pricing-container">
+        <div class="pricing-top">
+          <div class="pricing-url">Get your your self a Custom <span style="color: #fada09; font-size: 1.5rem;">Website </span></div>
+          <div class="pricing-price">360k</div>
+          <div class="pricing-package">FULL PACKAGE</div>
         </div>
-    </section>
+        <ul class="pricing-features">
+          <li>Domain Included</li>
+          <li>SSL Certificate</li>
+          <li>1 Year Hosting</li>
+          <li>Free Maintenance for 3 months</li>
+        </ul>
+        <a class="pricing-cta" href="#contact">GET STARTED</a>
+      </div>
+    </div>
+  </div>
+</section>
 
-    <!-- Skills Section -->
-    <section id="skills" class="section skills">
-        <div class="container">
-            <h2 class="section-title">Technical Expertise</h2>
-            <div class="skills-grid">
-                <div class="skill-category">
-                    <h4 class="skill-category-title">💻 Web Development</h4>
-                    <div class="skill-tags">
-                        <span class="skill-tag">HTML5</span>
-                        <span class="skill-tag">CSS3 & Bootstrap</span>
-                        <span class="skill-tag">JavaScript</span>
-                        <span class="skill-tag">PHP</span>
-                        <span class="skill-tag">WordPress</span>
-                        <span class="skill-tag">Responsive Design</span>
-                        <span class="skill-tag">Web Applications</span>
-                    </div>
-                </div>
-
-                <div class="skill-category">
-                    <h4 class="skill-category-title">🌐 Network Engineering</h4>
-                    <div class="skill-tags">
-                        <span class="skill-tag">FTTH Networks</span>
-                        <span class="skill-tag">Routing & Switching</span>
-                        <span class="skill-tag">VLAN Configuration</span>
-                        <span class="skill-tag">Network Security</span>
-                        <span class="skill-tag">Firewall Management</span>
-                        <span class="skill-tag">IP Infrastructure</span>
-                    </div>
-                </div>
-
-                <div class="skill-category">
-                    <h4 class="skill-category-title">🛠️ System Administration & IT Support</h4>
-                    <div class="skill-tags">
-                        <span class="skill-tag">Windows/Linux Admin</span>
-                        <span class="skill-tag">Server Configuration</span>
-                        <span class="skill-tag">Helpdesk Support</span>
-                        <span class="skill-tag">Hardware Troubleshooting</span>
-                        <span class="skill-tag">Software Installation</span>
-                        <span class="skill-tag">Endpoint Management</span>
-                        <span class="skill-tag">OS Installation</span>
-                    </div>
-                </div>
-
-                <div class="skill-category">
-                    <h4 class="skill-category-title">💾 Database & Backend</h4>
-                    <div class="skill-tags">
-                        <span class="skill-tag">Database Design</span>
-                        <span class="skill-tag">SQL</span>
-                        <span class="skill-tag">Database Management</span>
-                        <span class="skill-tag">ERP Systems</span>
-                        <span class="skill-tag">Backend Development</span>
-                    </div>
-                </div>
-
-                <div class="skill-category">
-                    <h4 class="skill-category-title">🔐 Security & Compliance</h4>
-                    <div class="skill-tags">
-                        <span class="skill-tag">Security Protocols</span>
-                        <span class="skill-tag">Data Protection</span>
-                        <span class="skill-tag">GDPR Compliance</span>
-                        <span class="skill-tag">Access Control</span>
-                        <span class="skill-tag">Network Monitoring</span>
-                    </div>
-                </div>
-
-                <div class="skill-category">
-                    <h4 class="skill-category-title">📊 Tools & Technologies</h4>
-                    <div class="skill-tags">
-                        <span class="skill-tag">Microsoft Suite</span>
-                        <span class="skill-tag">Android Studio</span>
-                        <span class="skill-tag">Photoshop</span>
-                        <span class="skill-tag">Data Analytics</span>
-                        <span class="skill-tag">Project Management</span>
-                        <span class="skill-tag">Cloud Computing</span>
-                        <span class="skill-tag">IoT</span>
-                    </div>
-                </div>
-            </div>
+<!-- ABOUT -->
+<section id="about">
+  <div class="container">
+    <div class="about-grid">
+      <div class="about-text fade-in">
+        <div class="section-label">// about.md</div>
+        <div class="divider"></div>
+        <h2 class="section-title">The person behind the terminal</h2>
+        <p>
+          I'm a versatile IT professional whose work spans two worlds — the physical infrastructure
+          keeping Kampala connected, and the digital experiences built on top of it. My approach is
+          simple: <strong>understand the problem deeply, then build the most elegant solution possible.</strong>
+        </p>
+        <p>
+          At Savanna Fibre, I manage FTTH networks serving enterprise clients with 99.8% uptime targets.
+          Before that, I spent over a year at Compax Solutions hands-on with everything from hardware
+          to ERP deployments across 50+ endpoints.
+        </p>
+        <p>
+          On the development side, I build full-stack web applications with clean UI, solid backend logic,
+          and databases that scale. I hold a B.Sc. in Information Technology from Ndejje University and
+          continue to pursue certifications that keep my skills sharp.
+        </p>
+      </div>
+      <div class="fade-in">
+        <div class="section-label" style="margin-bottom:1rem;">// education.log</div>
+        <div class="edu-card">
+          <div class="edu-icon">
+            <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M22 10v6M2 10l10-5 10 5-10 5z"/><path d="M6 12v5c3 3 9 3 12 0v-5"/></svg>
+          </div>
+          <div>
+            <div class="edu-degree">B.Sc. Information Technology</div>
+            <div class="edu-school">Ndejje University, Kampala</div>
+            <div class="edu-year">2022 – 2024</div>
+          </div>
         </div>
-    </section>
-
-    <!-- Certifications Section -->
-    <section id="certifications" class="section certifications">
-        <div class="container">
-            <h2 class="section-title">Professional Certifications</h2>
-            <div class="certifications-grid">
-                <div class="certification-card">
-                    <div class="cert-icon">🏆</div>
-                    <h4>Introduction to Networks</h4>
-                    <p class="cert-issuer">Cisco Networking Academy</p>
-                </div>
-                <div class="certification-card">
-                    <div class="cert-icon">🏆</div>
-                    <h4>Switching, Routing & Wireless Essentials</h4>
-                    <p class="cert-issuer">Cisco Networking Academy</p>
-                </div>
-                <div class="certification-card">
-                    <div class="cert-icon">🏆</div>
-                    <h4>Enterprise Network, Security & Automation</h4>
-                    <p class="cert-issuer">Cisco Networking Academy</p>
-                </div>
-                <div class="certification-card">
-                    <div class="cert-icon">🏆</div>
-                    <h4>HCIA Security</h4>
-                    <p class="cert-issuer">Huawei Certified Associate</p>
-                </div>
+        
+        <div style="margin-top:2rem;">
+          <div class="section-label" style="margin-bottom:1rem;">// github.activity</div>
+          <a href="https://github.com/KatoEmmanuel" target="_blank" rel="noopener" class="contact-link" style="text-decoration:none;">
+            <div class="contact-link-icon" style="background:rgba(124,58,237,0.1); border:1px solid rgba(124,58,237,0.15); color:var(--accent2);">
+              <svg width="18" height="18" viewBox="0 0 24 24" fill="currentColor"><path d="M12 0c-6.626 0-12 5.373-12 12 0 5.302 3.438 9.8 8.207 11.387.599.111.793-.261.793-.577v-2.234c-3.338.726-4.033-1.416-4.033-1.416-.546-1.387-1.333-1.756-1.333-1.756-1.089-.745.083-.729.083-.729 1.205.084 1.839 1.237 1.839 1.237 1.07 1.834 2.807 1.304 3.492.997.107-.775.418-1.305.762-1.604-2.665-.305-5.467-1.334-5.467-5.931 0-1.311.469-2.381 1.236-3.221-.124-.303-.535-1.524.117-3.176 0 0 1.008-.322 3.301 1.23.957-.266 1.983-.399 3.003-.404 1.02.005 2.047.138 3.006.404 2.291-1.552 3.297-1.23 3.297-1.23.653 1.653.242 2.874.118 3.176.77.84 1.235 1.911 1.235 3.221 0 4.609-2.807 5.624-5.479 5.921.43.372.823 1.102.823 2.222v3.293c0 .319.192.694.801.576 4.765-1.589 8.199-6.086 8.199-11.386 0-6.627-5.373-12-12-12z"/></svg>
             </div>
-        </div>
-    </section>
-
-    <!-- Contact Section -->
-    <section id="contact" class="section contact">
-        <div class="container">
-            <h2 class="section-title">Get In Touch</h2>
-            <div class="contact-wrapper">
-                <p class="contact-intro">I'm open to discussing new opportunities, collaborations, or technical challenges. Feel free to reach out.</p>
-                
-                <div class="contact-grid">
-                    <a href="tel:+256751112438" class="contact-card">
-                        <span class="contact-icon">📞</span>
-                        <span class="contact-label">Phone</span>
-                        <span class="contact-value">+256 751 112 438</span>
-                    </a>
-                    <a href="mailto:katoemmanganda@gmail.com" class="contact-card">
-                        <span class="contact-icon">✉️</span>
-                        <span class="contact-label">Email</span>
-                        <span class="contact-value">katoemmanganda@gmail.com</span>
-                    </a>
-                    <a href="https://github.com/KatoEmmanuel" target="_blank" class="contact-card">
-                        <span class="contact-icon">🔗</span>
-                        <span class="contact-label">GitHub</span>
-                        <span class="contact-value">KatoEmmanuel</span>
-                    </a>
-                    <a href="https://katoemmanganda.netlify.app" target="_blank" class="contact-card">
-                        <span class="contact-icon">🌐</span>
-                        <span class="contact-label">Portfolio Site</span>
-                        <span class="contact-value">katoemmanganda.netlify.app</span>
-                    </a>
-                </div>
-
-                <div class="contact-location">
-                    <p>📍 <strong>Based in:</strong> Kampala, Uganda</p>
-                    <p>⚙️ <strong>Currently:</strong> Network Support Engineer Tier II at Savanna Fibre</p>
-                </div>
+            <div>
+              <div style="font-weight:600;font-size:14px;color:var(--text);">KatoEmmanuel on GitHub</div>
+              <div style="font-size:12px;color:var(--text3);">github.com/KatoEmmanuel</div>
             </div>
+          </a>
         </div>
-    </section>
+      </div>
+    </div>
+  </div>
+</section>
 
-    <!-- Footer -->
-    <footer class="footer">
-        <div class="container">
-            <p>&copy; 2026 KATO EMMANUEL NGANDA. Designed & Built with Excellence. All rights reserved.</p>
-            <div class="footer-links">
-                <a href="#hero">Back to Top</a>
+<!-- EXPERIENCE -->
+<section id="experience">
+  <div class="container">
+    <div class="section-label">// career.history</div>
+    <div class="divider"></div>
+    <h2 class="section-title">Professional Experience</h2>
+    <p class="section-desc">Three years of hands-on engineering across network infrastructure, IT support, and client-facing technical roles.</p>
+
+    <div class="timeline fade-in">
+      <div class="timeline-item">
+        <div class="timeline-dot"></div>
+        <div class="exp-header">
+          <div class="exp-title">Network Support Engineer, Tier II</div>
+          <div class="exp-period">Dec 2025 – Present</div>
+        </div>
+        <div class="exp-company">
+          <svg width="12" height="12" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><rect x="2" y="7" width="20" height="14" rx="2" ry="2"/><path d="M16 21V5a2 2 0 0 0-2-2h-4a2 2 0 0 0-2 2v16"/></svg>
+          Savanna Fibre · Owen Road, Kampala
+        </div>
+        <ul class="exp-list">
+          <li>Monitor and maintain FTTH network performance ensuring 99.8% service availability</li>
+          <li>Diagnose and resolve complex network faults, outages, and service degradation issues</li>
+          <li>Configure and manage routers, switches, and wireless equipment across enterprise infrastructure</li>
+          <li>Handle incident response and escalation management to minimize customer downtime</li>
+          <li>Document network performance metrics and generate technical reports for stakeholder review</li>
+        </ul>
+      </div>
+
+      <div class="timeline-item">
+        <div class="timeline-dot dim"></div>
+        <div class="exp-header">
+          <div class="exp-title">Customer Care Representative</div>
+          <div class="exp-period">Feb 2025 – Oct 2025</div>
+        </div>
+        <div class="exp-company">
+          <svg width="12" height="12" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><rect x="2" y="7" width="20" height="14" rx="2" ry="2"/><path d="M16 21V5a2 2 0 0 0-2-2h-4a2 2 0 0 0-2 2v16"/></svg>
+          Airtel Uganda · Wandegeya, Kampala
+        </div>
+        <ul class="exp-list">
+          <li>Resolved 2000+ customer support tickets with 95% first-contact resolution rate</li>
+          <li>Provided technical troubleshooting for network and billing issues across all platforms</li>
+          <li>Maintained detailed customer interaction records and escalation protocols</li>
+        </ul>
+      </div>
+
+      <div class="timeline-item">
+        <div class="timeline-dot dim"></div>
+        <div class="exp-header">
+          <div class="exp-title">IT Specialist (Internship)</div>
+          <div class="exp-period">Jan 2023 – Aug 2024</div>
+        </div>
+        <div class="exp-company">
+          <svg width="12" height="12" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><rect x="2" y="7" width="20" height="14" rx="2" ry="2"/><path d="M16 21V5a2 2 0 0 0-2-2h-4a2 2 0 0 0-2 2v16"/></svg>
+          Compax Solutions · Wandegeya, Kampala
+        </div>
+        <ul class="exp-list">
+          <li>Maintained and troubleshot IT hardware, software, and network systems for 50+ endpoints</li>
+          <li>Deployed and configured operating systems ensuring GDPR compliance and security standards</li>
+          <li>Implemented ERP system solutions and provided technical support for system upgrades</li>
+          <li>Established network infrastructure for multiple client locations with redundancy</li>
+        </ul>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- SKILLS -->
+<section id="skills">
+  <div class="container">
+    <div class="section-label">// skills.json</div>
+    <div class="divider"></div>
+    <h2 class="section-title">Technical Expertise</h2>
+    <p class="section-desc">A cross-domain toolkit built through real-world engineering and development work.</p>
+
+    <div class="skills-grid fade-in">
+      <div class="skill-group">
+        <div class="skill-group-header">
+          <div class="skill-icon blue">💻</div>
+          <div class="skill-group-name">Web Development</div>
+        </div>
+        <div class="skill-tags">
+          <span class="skill-tag">HTML5</span>
+          <span class="skill-tag">CSS3</span>
+          <span class="skill-tag">Bootstrap</span>
+          <span class="skill-tag">JavaScript</span>
+          <span class="skill-tag">PHP</span>
+          <span class="skill-tag">WordPress</span>
+          <span class="skill-tag">Responsive Design</span>
+        </div>
+      </div>
+
+      <div class="skill-group">
+        <div class="skill-group-header">
+          <div class="skill-icon green">🌐</div>
+          <div class="skill-group-name">Network Engineering</div>
+        </div>
+        <div class="skill-tags">
+          <span class="skill-tag">FTTH Networks</span>
+          <span class="skill-tag">Routing & Switching</span>
+          <span class="skill-tag">VLAN Configuration</span>
+          <span class="skill-tag">Network Security</span>
+          <span class="skill-tag">Firewall Management</span>
+          <span class="skill-tag">IP Infrastructure</span>
+        </div>
+      </div>
+
+      <div class="skill-group">
+        <div class="skill-group-header">
+          <div class="skill-icon amber">🛠️</div>
+          <div class="skill-group-name">System Administration</div>
+        </div>
+        <div class="skill-tags">
+          <span class="skill-tag">Windows/Linux</span>
+          <span class="skill-tag">Server Configuration</span>
+          <span class="skill-tag">Helpdesk Support</span>
+          <span class="skill-tag">Hardware Troubleshooting</span>
+          <span class="skill-tag">Endpoint Management</span>
+          <span class="skill-tag">OS Installation</span>
+          <span class="skill-tag">Arduino</span>
+
+        </div>
+      </div>
+
+      <div class="skill-group">
+        <div class="skill-group-header">
+          <div class="skill-icon purple">💾</div>
+          <div class="skill-group-name">Database & Backend</div>
+        </div>
+        <div class="skill-tags">
+          <span class="skill-tag">SQL</span>
+          <span class="skill-tag">Database Design</span>
+          <span class="skill-tag">ERP Systems</span>
+          <span class="skill-tag">Backend Development</span>
+          <span class="skill-tag">Database Management</span>
+        </div>
+      </div>
+
+      <div class="skill-group">
+        <div class="skill-group-header">
+          <div class="skill-icon red">🔐</div>
+          <div class="skill-group-name">Security & Compliance</div>
+        </div>
+        <div class="skill-tags">
+          <span class="skill-tag">Security Protocols</span>
+          <span class="skill-tag">Data Protection</span>
+          <span class="skill-tag">GDPR Compliance</span>
+          <span class="skill-tag">Access Control</span>
+          <span class="skill-tag">Network Monitoring</span>
+        </div>
+      </div>
+
+      <div class="skill-group">
+        <div class="skill-group-header">
+          <div class="skill-icon cyan">📊</div>
+          <div class="skill-group-name">Tools & Platforms</div>
+        </div>
+        <div class="skill-tags">
+          <span class="skill-tag">Microsoft Suite</span>
+          <span class="skill-tag">Android Studio</span>
+          <span class="skill-tag">Photoshop</span>
+          <span class="skill-tag">Cloud Computing</span>
+          <span class="skill-tag">IoT</span>
+          <span class="skill-tag">Data Analytics</span>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- CERTIFICATIONS -->
+<section id="certifications">
+  <div class="container">
+    <div class="section-label">// certs.verified</div>
+    <div class="divider"></div>
+    <h2 class="section-title">Certifications</h2>
+    <p class="section-desc">Industry-recognised credentials from Cisco and Huawei.</p>
+
+    <div class="certs-grid fade-in">
+      <div class="cert-card">
+        <div class="cert-trophy">🏆</div>
+        <div class="cert-org-badge">Cisco</div>
+        <div class="cert-name">Introduction to Networks</div>
+      </div>
+      <div class="cert-card">
+        <div class="cert-trophy">🏆</div>
+        <div class="cert-org-badge">Cisco</div>
+        <div class="cert-name">Switching, Routing & Wireless Essentials</div>
+      </div>
+      <div class="cert-card">
+        <div class="cert-trophy">🏆</div>
+        <div class="cert-org-badge">Cisco</div>
+        <div class="cert-name">Enterprise Network, Security & Automation</div>
+      </div>
+      <div class="cert-card">
+        <div class="cert-trophy">🏆</div>
+        <div class="cert-org-badge">Huawei</div>
+        <div class="cert-name">HCIA Security Certified Associate</div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- PROJECTS -->
+<section id="projects">
+  <div class="container">
+    <div class="section-label">// projects.showcase</div>
+    <div class="divider"></div>
+    <h2 class="section-title">Selected Projects</h2>
+    <p class="section-desc">A selection of web, network, and IT projects. Links coming soon — drop me a message to learn more.</p>
+
+    <div class="projects-grid fade-in">
+
+      <div class="project-card">
+        <div class="project-header">
+          <div class="project-icon">🌐</div>
+          <div class="project-links">
+            <a href="#" class="project-link" title="GitHub" aria-label="View source code">&lt;/&gt;</a>
+            <a href="#" class="project-link" title="Live Demo" aria-label="View live project">↗</a>
+          </div>
+        </div>
+        <div class="project-title"><a href="https://wagumalifereachug.org/" target="_blank" rel="noopener noreferrer">Waguma Life Reach Uganda</a></div>
+        <div class="project-desc">
+          Waguma Life Reach Out is a non-profit organization dedicated to improving lives through community empowerment, education, healthcare, and support programs for vulnerable individuals. We strive to create lasting positive change by fostering hope, opportunity, and sustainable development in communities.
+        </div>
+        <div class="project-stack">
+          <span class="stack-tag">HTML</span>
+          <span class="stack-tag">CSS</span>
+          <span class="stack-tag">JavaScript</span>
+        </div>
+      </div>
+
+      <div class="project-card">
+        <div class="project-header">
+          <div class="project-icon">🔒</div>
+          <div class="project-links">
+            <a href="#" class="project-link" title="GitHub" aria-label="View source code">&lt;/&gt;</a>
+            <a href="#" class="project-link" title="Live Demo" aria-label="View live project">↗</a>
+          </div>
+        </div>
+        <div class="project-title"><a href="https://katoemmanuel.github.io/DENTAL-CARE-TANGLINE/">Tangline Denatl Care </a> </div>
+        <div class="project-desc">
+          Tangline Dental Care is committed to providing high-quality, compassionate dental services that promote healthy smiles and overall well-being. Our experienced team delivers personalized oral healthcare using modern technology in a comfortable and welcoming environment.
+        </div>
+        <div class="project-stack">
+          <span class="stack-tag">PHP</span>
+          <span class="stack-tag">MySQL</span>
+          <span class="stack-tag">Bootstrap</span>
+        </div>
+      </div>
+
+      <div class="project-card">
+        <div class="project-header">
+          <div class="project-icon">📡</div>
+          <div class="project-links">
+            <a href="#" class="project-link" title="GitHub" aria-label="View source code">&lt;/&gt;</a>
+            <a href="#" class="project-link" title="Live Demo" aria-label="View live project">↗</a>
+          </div>
+        </div>
+        <div class="project-title">Obstacle detection system </div>
+        <div class="project-desc">
+          I developed an Arduino-based Obstacle Detection System designed to assist visually impaired individuals in navigating their surroundings safely and independently. The system utilizes ultrasonic sensors to detect obstacles in real time and provides immediate feedback through audio or vibration alerts. By identifying objects within a predefined range, the solution helps users avoid collisions, enhances spatial
+        </div>
+        <div class="project-stack">
+          <span class="stack-tag">Arduino</span>
+          <span class="stack-tag">Hardware Programming</span>
+          
+        </div>
+      </div>
+
+      
+
+    </div>
+  </div>
+</section>
+
+<!-- CONTACT -->
+<section id="contact">
+  <div class="container">
+    <div class="section-label">// contact.init()</div>
+    <div class="divider"></div>
+    <h2 class="section-title">Let's Work Together</h2>
+    <p class="section-desc">Open to freelance projects, full-time roles, and technical collaborations. Fill in the form or reach out directly.</p>
+
+    <div class="contact-wrapper fade-in">
+      <div class="contact-info">
+        <h3>Direct Channels</h3>
+        <p>Fastest response via WhatsApp or email. Based in Kampala, available for remote and on-site engagements across East Africa and beyond.</p>
+
+        <div class="contact-links">
+          <a href="tel:+256751112438" class="contact-link">
+            <div class="contact-link-icon" style="background:rgba(0,212,255,0.08);border:1px solid rgba(0,212,255,0.12);">
+              <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="var(--accent)" stroke-width="2"><path d="M22 16.92v3a2 2 0 0 1-2.18 2 19.79 19.79 0 0 1-8.63-3.07A19.5 19.5 0 0 1 4.69 12a19.79 19.79 0 0 1-3.07-8.67A2 2 0 0 1 3.61 2h3a2 2 0 0 1 2 1.72c.127.96.361 1.903.7 2.81a2 2 0 0 1-.45 2.11L8.09 9.91a16 16 0 0 0 6 6l1.27-1.27a2 2 0 0 1 2.11-.45c.907.339 1.85.573 2.81.7A2 2 0 0 1 22 16.92z"/></svg>
             </div>
-        </div>
-    </footer>
+            <div>
+              <div style="font-weight:600;font-size:14px;color:var(--text);">+256 751 112 438</div>
+              <div style="font-size:12px;color:var(--text3);">Call or WhatsApp</div>
+            </div>
+          </a>
 
-    <script src="script.js"></script>
+          <a href="mailto:katoemmanganda@gmail.com" class="contact-link">
+            <div class="contact-link-icon" style="background:rgba(124,58,237,0.08);border:1px solid rgba(124,58,237,0.12);">
+              <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="var(--accent2)" stroke-width="2"><path d="M4 4h16c1.1 0 2 .9 2 2v12c0 1.1-.9 2-2 2H4c-1.1 0-2-.9-2-2V6c0-1.1.9-2 2-2z"/><polyline points="22,6 12,13 2,6"/></svg>
+            </div>
+            <div>
+              <div style="font-weight:600;font-size:14px;color:var(--text);">katoemmanganda@gmail.com</div>
+              <div style="font-size:12px;color:var(--text3);">I respond within 24 hours</div>
+            </div>
+          </a>
+
+          <a href="https://wa.me/256751112438" target="_blank" rel="noopener" class="contact-link">
+            <div class="contact-link-icon" style="background:rgba(37,211,102,0.08);border:1px solid rgba(37,211,102,0.15);">
+              <svg width="16" height="16" viewBox="0 0 24 24" fill="#25D366"><path d="M17.472 14.382c-.297-.149-1.758-.867-2.03-.967-.273-.099-.471-.148-.67.15-.197.297-.767.966-.94 1.164-.173.199-.347.223-.644.075-.297-.15-1.255-.463-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.298-.347.446-.52.149-.174.198-.298.298-.497.099-.198.05-.371-.025-.52-.075-.149-.669-1.612-.916-2.207-.242-.579-.487-.5-.669-.51-.173-.008-.371-.01-.57-.01-.198 0-.52.074-.792.372-.272.297-1.04 1.016-1.04 2.479 0 1.462 1.065 2.875 1.213 3.074.149.198 2.096 3.2 5.077 4.487.709.306 1.262.489 1.694.625.712.227 1.36.195 1.871.118.571-.085 1.758-.719 2.006-1.413.248-.694.248-1.289.173-1.413-.074-.124-.272-.198-.57-.347m-5.421 7.403h-.004a9.87 9.87 0 01-5.031-1.378l-.361-.214-3.741.982.998-3.648-.235-.374a9.86 9.86 0 01-1.51-5.26c.001-5.45 4.436-9.884 9.888-9.884 2.64 0 5.122 1.03 6.988 2.898a9.825 9.825 0 012.893 6.994c-.003 5.45-4.437 9.884-9.885 9.884m8.413-18.297A11.815 11.815 0 0012.05 0C5.495 0 .16 5.335.157 11.892c0 2.096.547 4.142 1.588 5.945L.057 24l6.305-1.654a11.882 11.882 0 005.683 1.448h.005c6.554 0 11.89-5.335 11.893-11.893a11.821 11.821 0 00-3.48-8.413Z"/></svg>
+            </div>
+            <div>
+              <div style="font-weight:600;font-size:14px;color:var(--text);">WhatsApp</div>
+              <div style="font-size:12px;color:var(--text3);">Chat on WhatsApp directly</div>
+            </div>
+          </a>
+
+          <a href="https://github.com/KatoEmmanuel" target="_blank" rel="noopener" class="contact-link">
+            <div class="contact-link-icon" style="background:rgba(255,255,255,0.04);border:1px solid var(--border);">
+              <svg width="16" height="16" viewBox="0 0 24 24" fill="var(--text2)"><path d="M12 0c-6.626 0-12 5.373-12 12 0 5.302 3.438 9.8 8.207 11.387.599.111.793-.261.793-.577v-2.234c-3.338.726-4.033-1.416-4.033-1.416-.546-1.387-1.333-1.756-1.333-1.756-1.089-.745.083-.729.083-.729 1.205.084 1.839 1.237 1.839 1.237 1.07 1.834 2.807 1.304 3.492.997.107-.775.418-1.305.762-1.604-2.665-.305-5.467-1.334-5.467-5.931 0-1.311.469-2.381 1.236-3.221-.124-.303-.535-1.524.117-3.176 0 0 1.008-.322 3.301 1.23.957-.266 1.983-.399 3.003-.404 1.02.005 2.047.138 3.006.404 2.291-1.552 3.297-1.23 3.297-1.23.653 1.653.242 2.874.118 3.176.77.84 1.235 1.911 1.235 3.221 0 4.609-2.807 5.624-5.479 5.921.43.372.823 1.102.823 2.222v3.293c0 .319.192.694.801.576 4.765-1.589 8.199-6.086 8.199-11.386 0-6.627-5.373-12-12-12z"/></svg>
+            </div>
+            <div>
+              <div style="font-weight:600;font-size:14px;color:var(--text);">GitHub</div>
+              <div style="font-size:12px;color:var(--text3);">github.com/KatoEmmanuel</div>
+            </div>
+          </a>
+        </div>
+      </div>
+
+      <!-- FORM via FormSubmit -->
+      <div class="contact-form">
+        <div class="form-title">
+          <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="var(--accent)" stroke-width="2"><path d="M21 15a2 2 0 0 1-2 2H7l-4 4V5a2 2 0 0 1 2-2h14a2 2 0 0 1 2 2z"/></svg>
+          Send a Message
+        </div>
+
+        <form action="https://formsubmit.co/katoemmanganda@gmail.com" method="POST" id="contactForm">
+          <!-- FormSubmit config -->
+          <input type="hidden" name="_subject" value="New message from portfolio site">
+          <input type="hidden" name="_captcha" value="false">
+          <input type="hidden" name="_template" value="table">
+          <input type="text" name="_honey" style="display:none">
+
+          <div class="form-row">
+            <div class="form-group">
+              <label for="fname">First Name *</label>
+              <input type="text" id="fname" name="first_name" placeholder="John" required>
+            </div>
+            <div class="form-group">
+              <label for="lname">Last Name</label>
+              <input type="text" id="lname" name="last_name" placeholder="Doe">
+            </div>
+          </div>
+
+          <div class="form-group">
+            <label for="email">Email Address *</label>
+            <input type="email" id="email" name="email" placeholder="john@example.com" required>
+          </div>
+
+          <div class="form-group">
+            <label for="phone">Phone / WhatsApp</label>
+            <input type="tel" id="phone" name="phone" placeholder="+256 ...">
+          </div>
+
+          <div class="form-group">
+            <label for="service">Service Needed</label>
+            <select id="service" name="service">
+              <option value="" disabled selected>Select a service...</option>
+              <option value="web-development">Web Development</option>
+              <option value="network-engineering">Network Engineering</option>
+              <option value="it-support">IT Support & Maintenance</option>
+              <option value="system-admin">System Administration</option>
+              <option value="consultation">Technical Consultation</option>
+              <option value="other">Other</option>
+            </select>
+          </div>
+
+          <div class="form-group">
+            <label for="message">Message *</label>
+            <textarea id="message" name="message" rows="4" placeholder="Tell me about your project, problem, or opportunity..." required></textarea>
+          </div>
+
+          <div class="form-submit">
+            <button type="submit" class="btn-primary" style="flex:1;">
+              <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><line x1="22" y1="2" x2="11" y2="13"/><polygon points="22 2 15 22 11 13 2 9 22 2"/></svg>
+              Send Message
+            </button>
+            <a href="https://wa.me/256751112438?text=Hi%20Kato,%20I%20found%20your%20portfolio%20and%20would%20like%20to%20discuss%20a%20project." target="_blank" rel="noopener" class="wa-btn">
+              <svg width="16" height="16" viewBox="0 0 24 24" fill="currentColor"><path d="M17.472 14.382c-.297-.149-1.758-.867-2.03-.967-.273-.099-.471-.148-.67.15-.197.297-.767.966-.94 1.164-.173.199-.347.223-.644.075-.297-.15-1.255-.463-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.298-.347.446-.52.149-.174.198-.298.298-.497.099-.198.05-.371-.025-.52-.075-.149-.669-1.612-.916-2.207-.242-.579-.487-.5-.669-.51-.173-.008-.371-.01-.57-.01-.198 0-.52.074-.792.372-.272.297-1.04 1.016-1.04 2.479 0 1.462 1.065 2.875 1.213 3.074.149.198 2.096 3.2 5.077 4.487.709.306 1.262.489 1.694.625.712.227 1.36.195 1.871.118.571-.085 1.758-.719 2.006-1.413.248-.694.248-1.289.173-1.413-.074-.124-.272-.198-.57-.347m-5.421 7.403h-.004a9.87 9.87 0 01-5.031-1.378l-.361-.214-3.741.982.998-3.648-.235-.374a9.86 9.86 0 01-1.51-5.26c.001-5.45 4.436-9.884 9.888-9.884 2.64 0 5.122 1.03 6.988 2.898a9.825 9.825 0 012.893 6.994c-.003 5.45-4.437 9.884-9.885 9.884m8.413-18.297A11.815 11.815 0 0012.05 0C5.495 0 .16 5.335.157 11.892c0 2.096.547 4.142 1.588 5.945L.057 24l6.305-1.654a11.882 11.882 0 005.683 1.448h.005c6.554 0 11.89-5.335 11.893-11.893a11.821 11.821 0 00-3.48-8.413Z"/></svg>
+              WhatsApp
+            </a>
+          </div>
+        </form>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- FOOTER -->
+<footer>
+  <div class="footer-inner">
+    <div class="footer-brand"><strong>KEN</strong>.dev · Kato Emmanuel Nganda</div>
+    <div class="footer-copy">© 2026 · Built with precision in Kampala, Uganda</div>
+    <div class="footer-links">
+      <a href="#hero">Top</a>
+      <a href="mailto:katoemmanganda@gmail.com">Email</a>
+      <a href="https://github.com/KatoEmmanuel" target="_blank" rel="noopener">GitHub</a>
+    </div>
+  </div>
+</footer>
+
+<!-- FLOATING BUTTONS -->
+<div class="floating-social">
+  <a href="https://wa.me/256751112438?text=Hi%20Kato,%20I%20found%20your%20portfolio%20and%20would%20like%20to%20chat." target="_blank" rel="noopener" class="float-btn float-wa" title="WhatsApp" aria-label="Chat on WhatsApp">
+    <svg width="22" height="22" viewBox="0 0 24 24" fill="currentColor"><path d="M17.472 14.382c-.297-.149-1.758-.867-2.03-.967-.273-.099-.471-.148-.67.15-.197.297-.767.966-.94 1.164-.173.199-.347.223-.644.075-.297-.15-1.255-.463-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.298-.347.446-.52.149-.174.198-.298.298-.497.099-.198.05-.371-.025-.52-.075-.149-.669-1.612-.916-2.207-.242-.579-.487-.5-.669-.51-.173-.008-.371-.01-.57-.01-.198 0-.52.074-.792.372-.272.297-1.04 1.016-1.04 2.479 0 1.462 1.065 2.875 1.213 3.074.149.198 2.096 3.2 5.077 4.487.709.306 1.262.489 1.694.625.712.227 1.36.195 1.871.118.571-.085 1.758-.719 2.006-1.413.248-.694.248-1.289.173-1.413-.074-.124-.272-.198-.57-.347m-5.421 7.403h-.004a9.87 9.87 0 01-5.031-1.378l-.361-.214-3.741.982.998-3.648-.235-.374a9.86 9.86 0 01-1.51-5.26c.001-5.45 4.436-9.884 9.888-9.884 2.64 0 5.122 1.03 6.988 2.898a9.825 9.825 0 012.893 6.994c-.003 5.45-4.437 9.884-9.885 9.884m8.413-18.297A11.815 11.815 0 0012.05 0C5.495 0 .16 5.335.157 11.892c0 2.096.547 4.142 1.588 5.945L.057 24l6.305-1.654a11.882 11.882 0 005.683 1.448h.005c6.554 0 11.89-5.335 11.893-11.893a11.821 11.821 0 00-3.48-8.413Z"/></svg>
+  </a>
+  <a href="mailto:katoemmanganda@gmail.com" class="float-btn float-mail" title="Email" aria-label="Send email">
+    <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><path d="M4 4h16c1.1 0 2 .9 2 2v12c0 1.1-.9 2-2 2H4c-1.1 0-2-.9-2-2V6c0-1.1.9-2 2-2z"/><polyline points="22,6 12,13 2,6"/></svg>
+  </a>
+
+  <a href="https://www.youtube.com/@katoemmanganda" target="_blank" rel="noopener" class="float-btn float-wa" title="WhatsApp" aria-label="Chat on WhatsApp">
+    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 640 640"><!--!Font Awesome Free v7.2.0 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license/free Copyright 2026 Fonticons, Inc.--><path fill="rgb(239, 63, 14)" d="M581.7 188.1C575.5 164.4 556.9 145.8 533.4 139.5C490.9 128 320.1 128 320.1 128C320.1 128 149.3 128 106.7 139.5C83.2 145.8 64.7 164.4 58.4 188.1C47 231 47 320.4 47 320.4C47 320.4 47 409.8 58.4 452.7C64.7 476.3 83.2 494.2 106.7 500.5C149.3 512 320.1 512 320.1 512C320.1 512 490.9 512 533.5 500.5C557 494.2 575.5 476.3 581.8 452.7C593.2 409.8 593.2 320.4 593.2 320.4C593.2 320.4 593.2 231 581.8 188.1zM264.2 401.6L264.2 239.2L406.9 320.4L264.2 401.6z"/></svg></svg>
+  </a>
+
+
+</div>
+
+<script>
+  // Mobile menu
+  const hamburger = document.getElementById('hamburger');
+  const mobileMenu = document.getElementById('mobileMenu');
+
+  hamburger.addEventListener('click', () => {
+    mobileMenu.classList.toggle('open');
+  });
+
+  function closeMobileMenu() {
+    mobileMenu.classList.remove('open');
+  }
+
+  // Scroll animations
+  const observer = new IntersectionObserver((entries) => {
+    entries.forEach(entry => {
+      if (entry.isIntersecting) {
+        entry.target.classList.add('visible');
+      }
+    });
+  }, { threshold: 0.1 });
+
+  document.querySelectorAll('.fade-in').forEach(el => observer.observe(el));
+
+  // Active nav link on scroll
+  const sections = document.querySelectorAll('section[id]');
+  const navLinks = document.querySelectorAll('.nav-links a');
+
+  window.addEventListener('scroll', () => {
+    let current = '';
+    sections.forEach(section => {
+      const sectionTop = section.offsetTop - 100;
+      if (window.scrollY >= sectionTop) {
+        current = section.getAttribute('id');
+      }
+    });
+
+    navLinks.forEach(link => {
+      link.style.color = '';
+      if (link.getAttribute('href') === '#' + current) {
+        link.style.color = 'var(--accent)';
+      }
+    });
+  });
+</script>
 </body>
 </html>
