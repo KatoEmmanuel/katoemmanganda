@@ -89,6 +89,20 @@
     color: var(--bg);
   }
 
+  /* Logo in navbar (left) */
+  .nav-left { display:flex; align-items:center; gap:12px; }
+  .nav-logo { display:flex; align-items:center; gap:10px; font-family: var(--mono); font-size:14px; color:var(--accent); }
+  .nav-logo-text span { color: var(--text2); }
+  .nav-logo-img { width:42px; height:42px; object-fit:contain; border-radius:6px; border:1px solid var(--border); background:transparent; }
+
+  /* Responsive adjustments */
+  @media (max-width: 768px) {
+    .nav-logo-text { display:none; }
+    .nav-links { display:none; }
+    .hamburger { display:flex; }
+    .nav-cta { display:none; }
+  }
+
   .hamburger {
     display: none;
     flex-direction: column;
